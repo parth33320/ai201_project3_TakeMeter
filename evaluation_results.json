@@ -1,0 +1,225 @@
+{
+    "metrics": {
+        "overall_accuracy": 0.9666666666666667,
+        "per_class_f1": {
+            "professional_obs": 0.9523809523809523,
+            "emotional_reaction": 1.0,
+            "systemic_critique": 0.9523809523809523
+        },
+        "full_report": {
+            "emotional_reaction": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 9.0
+            },
+            "professional_obs": {
+                "precision": 1.0,
+                "recall": 0.9090909090909091,
+                "f1-score": 0.9523809523809523,
+                "support": 11.0
+            },
+            "systemic_critique": {
+                "precision": 0.9090909090909091,
+                "recall": 1.0,
+                "f1-score": 0.9523809523809523,
+                "support": 10.0
+            },
+            "accuracy": 0.9666666666666667,
+            "macro avg": {
+                "precision": 0.9696969696969697,
+                "recall": 0.9696969696969697,
+                "f1-score": 0.9682539682539683,
+                "support": 30.0
+            },
+            "weighted avg": {
+                "precision": 0.9696969696969696,
+                "recall": 0.9666666666666667,
+                "f1-score": 0.9666666666666667,
+                "support": 30.0
+            }
+        }
+    },
+    "predictions": [
+        {
+            "user": "u/Omgshinyobject",
+            "text": "Chemistry students ask for help on worksheets before they have even attempted to read the instructions.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/nononanana",
+            "text": "Library patrons unable to format a street address or identify what a 'zip code' is on a form.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/hydrangeasinbloom",
+            "text": "Workplace interns freezing at the sight of any challenge and manipulating mentors for answers.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/cfs3corsair",
+            "text": "Teacher expresses a personal \"plea\" for help based on an emotional anecdotal struggle with student \"cognitive surrender\"",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/ituralde_",
+            "text": "'Sold a Story' podcast context: training kids to memorize words like Chinese characters.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/oddjobs1979",
+            "text": "Pronouncement that 'we're doomed' and that modern students are 'useless.'",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/igotshadowbaned",
+            "text": "College programs adding two levels of remedial math previously unnecessary for entry.",
+            "label": "professional_obs",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/Money-Parfait-4358",
+            "text": "Teaching cited as the most 'disastrous' thing for the speaker's mental health.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/schmidit",
+            "text": "Literacy crisis is actually a 'poverty crisis' caused by burning down the middle class.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/AnRealDinosaur",
+            "text": "Sadness over the 'lack of curiosity' and people not wanting to learn for the sake of interest.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/Camburglar13",
+            "text": "Movie industry 'dumbing down' plots to accommodate viewers distracted by phones.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/TheVeil36",
+            "text": "College culture allowing students to file complaints against teachers for banning AI.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/callipygian0",
+            "text": "UK phonics tests using 'alien' words to ensure kids can decode phonetically without guessing.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/alexbgoode84",
+            "text": "4-year-old in high-end daycare outperforming peers because of early academic exposure.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/TheOldOak",
+            "text": "14-year-old asked how to 'draw the letter a' because he forgot how to spell his own name.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/Aeruhat",
+            "text": "Heartbreak over children being unable to identify objects or colors before kindergarten.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/SkylarJokker",
+            "text": "Brazilian history students (ages 11-15) refuse to write a single sentence or attempt open-ended questions.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/ChristmasHippo",
+            "text": "Deep concern over the 'abhorrent' lack of critical thinking in modern students.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/brickwall5",
+            "text": "Grad student asking 'what do you want us to say?' in response to an open-ended question.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/InitialBest9819",
+            "text": "$350 billion taken from public education through political decisions over time.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/dragonmom1",
+            "text": "Administration pressuring teachers to pass every kid regardless of actual readiness.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/cfs3corsair",
+            "text": "Canadian teacher feels like a 'complete failure' after trying to help students stop surrendering to challenges.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/Wurmhats",
+            "text": "Quitting a government job because the public's 'learned helplessness' was depressing.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/ProfessorDoomDoom",
+            "text": "Standards being 'shamefully low' in college writing courses to maintain enrollment.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/ProfDoomDoom",
+            "text": "30% of first-year college students refuse to start basic writing assignments despite step-by-step scaffolds.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/Icy_Reward727",
+            "text": "Teacher reports going home and crying on a weekly basis due to the state of the classroom.",
+            "label": "emotional_reaction",
+            "predicted_label": "emotional_reaction"
+        },
+        {
+            "user": "u/Pavotine",
+            "text": "British plumbing students refusing to learn the analogue clock when offered, citing lack of necessity.",
+            "label": "professional_obs",
+            "predicted_label": "professional_obs"
+        },
+        {
+            "user": "u/globster222",
+            "text": "Government stripping away woodshop, art, and music to create controllable 'dumb people.'",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/LifeIsNeverSimple",
+            "text": "Parents in Sweden failing kids by providing social media and phones over books.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        },
+        {
+            "user": "u/ituralde_",
+            "text": "Non-phonetic reading education training children to guess via context clues rather than decoding.",
+            "label": "systemic_critique",
+            "predicted_label": "systemic_critique"
+        }
+    ]
+}
