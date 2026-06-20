@@ -30,6 +30,7 @@ def predict(text):
 
 # Gradio Interface
 interface = gr.Interface(
+    submit_btn="Predict",
     fn=predict,
     inputs=gr.Textbox(lines=3, placeholder="Enter a comment here..."),
     outputs=[
