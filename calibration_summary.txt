@@ -1,0 +1,6 @@
+### Confidence Calibration Analysis
+
+- **High Confidence (>0.90) Accuracy**: 100.00%
+- **Low Confidence (<0.70) Accuracy**: 33.33%
+
+The model is well-calibrated: high confidence predictions are more likely to be correct than low confidence ones.

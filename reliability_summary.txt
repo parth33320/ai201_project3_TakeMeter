@@ -1,0 +1,13 @@
+### Inter-Annotator Reliability (Cohen's Kappa)
+
+- **Kappa Score**: 0.9500
+- **Total Samples Compared**: 30
+- **Total Disagreements**: 1
+
+#### Disagreement Analysis
+
+| User | Claude Label | Human Label |
+| --- | --- | --- |
+| u/alexbgoode84 | systemic_critique | professional_obs |
+
+**Analysis**: The disagreement for `u/alexbgoode84` (4-year-old in high-end daycare) illustrates a subtle edge case. Claude identified the 'high-end daycare' as a systemic/institutional factor (`systemic_critique`), whereas the human label prioritized the 'outperforming peers' observation (`professional_obs`).
