@@ -29,8 +29,8 @@ def test_gradio_interface(gradio_server):
         # Fill in a sample text
         page.fill('textarea[placeholder="Enter a comment here..."]', "The students cannot read analog clocks.")
 
-        # Click the 'Submit' button
-        submit_button = page.get_by_role("button", name="Submit")
+        # Click the 'Predict' button
+        submit_button = page.get_by_role("button", name="Predict")
         submit_button.click()
 
         # Wait for the output to appear
