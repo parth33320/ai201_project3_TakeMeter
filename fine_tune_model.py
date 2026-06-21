@@ -59,7 +59,8 @@ def train_model(train_df, val_df):
         per_device_train_batch_size=16,
         per_device_eval_batch_size=16,
         learning_rate=2e-5,
-        evaluation_strategy="epoch",
+        # Change this line:
+        eval_strategy="epoch",  # Updated from evaluation_strategy="epoch"
         save_strategy="epoch",
         load_best_model_at_end=True,
         weight_decay=0.01,
@@ -92,15 +93,20 @@ def train_model(train_df, val_df):
     return trainer, tokenizer
 
 # SECTION 4: Evaluation
-def evaluate_model(trainer, test_df, label_map):
+def evaluate_model(trainer, tokenizer, test_df, label_map):
     """
     Evaluates the model on the test set and generates reports.
     """
-    tokenizer = trainer.tokenizer
+    # REMOVE OR COMMENT OUT THIS LINE:
+    # tokenizer = trainer.tokenizer 
+    
+    # Use the tokenizer passed as an argument directly:
     test_dataset = Dataset.from_pandas(test_df[['text', 'label_idx']].rename(columns={'label_idx': 'label'}))
-
+    
     def tokenize_function(examples):
         return tokenizer(examples["text"], padding="max_length", truncation=True)
+    
+    # ... rest of your code ...
 
     tokenized_test = test_dataset.map(tokenize_function, batched=True)
 
@@ -150,8 +156,8 @@ if __name__ == "__main__":
 
     trainer, tokenizer = train_model(train_df, val_df)
 
-    report, markdown_cm = evaluate_model(trainer, test_df, label_map)
-
+    report, markdown_cm = evaluate_model(trainer, tokenizer, test_df, label_map)
+    
     # Save the model
     trainer.save_model('./fine_tuned_take_meter')
     tokenizer.save_pretrained('./fine_tuned_take_meter')
